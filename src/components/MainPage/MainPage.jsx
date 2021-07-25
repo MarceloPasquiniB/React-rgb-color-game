@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React from "react";
 import { AppName, Grid, WhiteBackground, FlexWrapper } from "./style";
 import ColorButtons from "../ColorButtons/ColorButton";
 import StartProvider from "../Context/StartContext";

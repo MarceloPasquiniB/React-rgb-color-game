@@ -10,13 +10,13 @@ export default function StartProvider({ children }) {
   return (
     <StartContext.Provider
       value={{
-        start,
+        start, //Indicates whether the game has started.
         setStart,
-        winnerColor,
+        winnerColor, //Indicates the winner color.
         setWinnerColor,
-        buttonClicked,
+        buttonClicked, //Indicates the ID of the button that was clicked.
         setButtonClicked,
-        winnerColorPosition,
+        winnerColorPosition, //Indicates the array position of the winner color.
         setWinnerColorPosition
       }}
     >

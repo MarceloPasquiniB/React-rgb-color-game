@@ -9,16 +9,6 @@ export const AppName = styled.h1`
   color: ${(props) => props.theme.colors.dark};
 `;
 
-export const SubTitle = styled.h2`
-  font-size: 1.5rem;
-  text-align: center;
-  color: ${(props) => props.theme.colors.dark};
-  background-size: 2rem;
-
-  :last-child {
-    font-size: 1.8rem;
-  }
-`;
 
 export const WhiteBackground = styled.div`
   background-color: ${(props) => props.theme.colors.white};
@@ -48,12 +38,6 @@ export const Grid = styled.div`
   justify-items: center;
 `;
 
-export const ButtonColor = styled.button`
-  background-color: ${(props) => props.theme.colors.dark};
-  height: 6rem;
-  width: 100%;
-  border-radius: 16px;
-`;
 
 export const FlexWrapper = styled.div`
 display: flex;

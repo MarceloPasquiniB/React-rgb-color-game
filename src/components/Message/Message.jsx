@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
 import { StartContext } from "../Context/StartContext";
-import { Title } from "../WinnerCollor/style";
+import { Title } from "./style";
 
 export default function Message() {
   const { start, buttonClicked, winnerColorPosition } = useContext(StartContext);
+
+
+
+  //Button undefined means the game hasn't started yet. The button value is only set when the player clicks on some button.
 
   if(buttonClicked == undefined || !start){
       return null

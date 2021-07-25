@@ -2,16 +2,19 @@ import React, { useContext, useEffect, useState } from "react";
 import { StartContext } from "../Context/StartContext";
 import { ButtonColor } from "./style";
 
-const random1 = Math.floor(Math.random() * 256);
+//This file contains the logic and the function for the Colored Buttons in the app.
 
 export default function ColorButtons() {
   const { start, setWinnerColor, setWinnerColorPosition, setButtonClicked } =
     useContext(StartContext);
 
+  //Array to place 12 values, that will be the values of rgb(red, green, blue).
   const [RGBArray, setRGBArray] = useState([]);
 
   useEffect(() => {
-    var tempArray = new Array();
+    //A temporary array and logic to create 12 random numbers, from 0 to 255, that will be the RGB colors.
+    //Render each time the variable "start" changes.
+    var tempArray = [];
     var singleRGB = 0;
     for (var i = 0; i < 12; i++) {
       singleRGB = Math.floor(Math.random() * 256);
@@ -28,6 +31,7 @@ export default function ColorButtons() {
   const RGB3 = String(`rgb(${RGBArray[6]}, ${RGBArray[7]}, ${RGBArray[8]})`);
   const RGB4 = String(`rgb(${RGBArray[9]}, ${RGBArray[10]}, ${RGBArray[11]})`);
 
+  //Show White Buttons while the game has not started.
   const color1 = start === true ? RGB : "rgb(255, 255, 255)";
   const color2 = start === true ? RGB2 : "rgb(255, 255, 255)";
   const color3 = start === true ? RGB3 : "rgb(255, 255, 255)";
@@ -36,13 +40,15 @@ export default function ColorButtons() {
   var ColorArray = [color1, color2, color3, color4];
 
   useEffect(() => {
-    //random is for get a random number to compare color
+    //"random" makes a random number, 0 to 3, to choose an array position.
     const random = Math.floor(Math.random() * ColorArray.length);
     //This useEffect prevents the ColorArray[random] to run every time a button is clicked
     setWinnerColor(ColorArray[random]);
+    //selects the position of the element previously defined.
     setWinnerColorPosition(ColorArray.indexOf(ColorArray[random]));
   }, [start]);
 
+  //save the ID of the button that was clicked.
   function handleClick(e) {
     setButtonClicked(e.target.id);
   }
@@ -72,7 +78,7 @@ export default function ColorButtons() {
         ></ButtonColor>
       </>
     );
-  }else{
-    return null
+  } else {
+    return null;
   }
 }

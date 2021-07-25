@@ -9,7 +9,7 @@ export default function WinnerColor() {
     return (
       <Wrapper>
         <Title>Can you discovery this color?</Title>
-        <Title><strong>{winnerColor}</strong></Title>
+        <Title>{winnerColor}</Title>
       </Wrapper>
     );
   } else return null;
