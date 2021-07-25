@@ -11,10 +11,7 @@ This project concerns in a browser game to challenges the player to choose from 
 
 ### 📸 Screenshot
 
-![Start Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-Game-start-screen.png)
-
-![Right Color Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-game-correct-anws!er-screen.png)
-
+![Right Color Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-game-correct-anwser-screen.png)![image](https://user-images.githubusercontent.com/84987471/126917603-15d83f7e-c5f0-4c30-b893-3d8dad35493c.png)
 
 ## 📝 User Story
 
@@ -22,7 +19,6 @@ This project concerns in a browser game to challenges the player to choose from 
 -	Correct answer message: When the player clicks in the correct button, a message will pop up, indicating that he matched.
 -	Incorrect answer message: After the first click on a wrong button, if the player doesn't get the right match, a message will appear on the screen, indicating that the choice is wrong.
 -	Restart button: After choosing the correct color a button will appear, which when clicked, will restart the game.
-
 
 ## 🔧 Dev tools
 
