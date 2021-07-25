@@ -11,7 +11,7 @@ This project concerns in a browser game to challenges the player to choose from 
 
 ### 📸 Screenshot
 
-![Right Color Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-game-correct-anwser-screen.png)![image](https://user-images.githubusercontent.com/84987471/126917603-15d83f7e-c5f0-4c30-b893-3d8dad35493c.png)
+![Right Color Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-game-correct-anwser-screen.png)
 
 ## 📝 User Story
 
