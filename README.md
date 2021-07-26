@@ -7,7 +7,7 @@ This project concerns in a browser game to challenges the player to choose from 
 
 ### 📱 Project link
 
-[PROJECT LINK](https://mpasquini-desktop-tip-calculator.netlify.app/)
+[PROJECT LINK](https://mpasquini-rgb-game.netlify.app/)
 
 ### 📸 Screenshot
 
