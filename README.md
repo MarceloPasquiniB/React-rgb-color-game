@@ -11,9 +11,9 @@ This project concerns in a browser game to challenges the player to choose from 
 
 ### 📸 Screenshot
 
-![Start Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-Game-start-screen.png)
-
-![Right Color Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-game-correct-anwser-screen.png)
+Start Screen             |  Correct Color Screen
+:-------------------------:|:-------------------------:
+![Start Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-Game-start-screen.png)  |  ![Right Color Screen]( https://github.com/MarceloPasquiniB/React-rgb-color-game/blob/master/Screenshots/RGB-game-correct-anwser-screen.png)
 
 ## 📝 User Story
 
