@@ -1,30 +1,26 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { StartContext } from "../Context/StartContext";
 import { ButtonColor } from "./style";
 
 //This file contains the logic and the function for the Colored Buttons in the app.
 
 export default function ColorButtons() {
-  const { start, setWinnerColor, setWinnerColorPosition, setButtonClicked } =
+  const { start, RGBArray, setRGBArray, setWinnerColor, setWinnerColorPosition, setButtonClicked } =
     useContext(StartContext);
-
-  //Array to place 12 values, that will be the values of rgb(red, green, blue).
-  const [RGBArray, setRGBArray] = useState([]);
 
   useEffect(() => {
     //A temporary array and logic to create 12 random numbers, from 0 to 255, that will be the RGB colors.
     //Render each time the variable "start" changes.
-    var tempArray = [];
-    var singleRGB = 0;
-    for (var i = 0; i < 12; i++) {
-      singleRGB = Math.floor(Math.random() * 256);
-      tempArray.push(singleRGB);
+    if(RGBArray.length === 0){
+      const tempArray = [];
+      var singleRGB = 0;
+      for (let i = 0; i < 12; i++) {
+        singleRGB = Math.floor(Math.random() * 256);
+        tempArray.push(singleRGB);
+      }
+      setRGBArray(tempArray);
     }
-    setRGBArray(tempArray);
-    console.log(RGBArray);
   }, [start]);
-
-  console.log(RGBArray);
 
   const RGB = String(`rgb(${RGBArray[0]}, ${RGBArray[1]}, ${RGBArray[2]})`);
   const RGB2 = String(`rgb(${RGBArray[3]}, ${RGBArray[4]}, ${RGBArray[5]})`);
@@ -37,7 +33,7 @@ export default function ColorButtons() {
   const color3 = start === true ? RGB3 : "rgb(255, 255, 255)";
   const color4 = start === true ? RGB4 : "rgb(255, 255, 255)";
 
-  var ColorArray = [color1, color2, color3, color4];
+  const ColorArray = [color1, color2, color3, color4];
 
   useEffect(() => {
     //"random" makes a random number, 0 to 3, to choose an array position.

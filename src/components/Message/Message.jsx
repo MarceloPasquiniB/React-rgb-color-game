@@ -5,13 +5,11 @@ import { Title } from "./style";
 export default function Message() {
   const { start, buttonClicked, winnerColorPosition } = useContext(StartContext);
 
-
-
   //Button undefined means the game hasn't started yet. The button value is only set when the player clicks on some button.
 
-  if(buttonClicked == undefined || !start){
+  if(buttonClicked === undefined || !start){
       return null
-  } else if (buttonClicked != undefined && buttonClicked != winnerColorPosition) {
+  } else if (buttonClicked !== undefined && Number(buttonClicked) !== Number(winnerColorPosition)) {
     return (
       <>
         <Title>Wrong Color! Try Again!</Title>
